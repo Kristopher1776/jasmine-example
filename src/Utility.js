@@ -8,3 +8,9 @@ function ageInYears(birthdayString) {
 	const millisecondsPerYear = 1000 * 60 * 60 * 24 * 365.25;
 	return Math.floor(ageInMilliseconds/millisecondsPerYear);
 }
+
+function isOver21(birthdayString) {
+	return ageInYears(birthdayString) >= 21;
+}
+
+// function isOver21(birthdayString)
