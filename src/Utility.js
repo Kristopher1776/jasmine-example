@@ -14,3 +14,7 @@ function isOver21(birthdayString) {
 }
 
 // function isOver21(birthdayString)
+
+function isLeapYear(year) {
+	return (year%4 == 0);
+}

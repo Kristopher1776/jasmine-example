@@ -31,7 +31,11 @@ describe("general purpose utility functions", function(){
   });
 
   describe("isLeapYear()", () => {
-    //when the year is evenly divisible by 4, it returns true. 
-    // expect(isLeapYear("")).toBe(true);
+    it("returns true when the year is evenly divisible by 4", () => {
+      expect(isLeapYear(2012)).toBe(true);
+    });
+    it("returns false when the year is not evenly divisible by 4", () => {
+      expect(isLeapYear(2010)).toBe(false);
+    }); 
   });
 });
